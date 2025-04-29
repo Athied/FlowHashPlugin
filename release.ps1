@@ -1,2 +1,0 @@
-dotnet publish Flow.Launcher.Plugin.HashPlugin -c Release -r win-x64 --no-self-contained
-Compress-Archive -LiteralPath Flow.Launcher.Plugin.HashPlugin/bin/Release/win-x64/publish -DestinationPath Flow.Launcher.Plugin.HashPlugin/bin/HashPlugin.zip -Force
