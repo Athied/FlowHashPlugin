@@ -5,8 +5,8 @@
     <AssemblyName>Flow.Launcher.Plugin.HashPlugin</AssemblyName>
     <PackageId>Flow.Launcher.Plugin.HashPlugin</PackageId>
     <Authors>Athied</Authors>
-    <PackageProjectUrl>https://github.com/Athied/Flow.Launcher.Plugin.HashPlugin</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Athied/Flow.Launcher.Plugin.HashPlugin</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Athied/FlowHashPlugin</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Athied/FlowHashPlugin</RepositoryUrl>
     <PackageTags>flow-launcher flow-plugin</PackageTags>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
