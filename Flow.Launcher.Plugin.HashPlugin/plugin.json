@@ -1,0 +1,12 @@
+{
+    "ID": "2D3600FF4BB940B5A95A5C479C64BB44",
+    "ActionKeyword": "hash",
+    "Name": "HashPlugin",
+    "Description": "a new plugin for Flow",
+    "Author": "Athied",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/Athied/Flow.Launcher.Plugin.HashPlugin",
+    "IcoPath": "Images/logo.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.HashPlugin.dll"
+}
