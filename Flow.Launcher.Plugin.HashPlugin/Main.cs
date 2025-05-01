@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Windows;
+using System.Text;
 using Flow.Launcher.Plugin;
+using System.Runtime.Intrinsics.Arm;
 
 namespace Flow.Launcher.Plugin.HashPlugin
 {
@@ -25,9 +27,10 @@ namespace Flow.Launcher.Plugin.HashPlugin
 
             string iconPath = "Images/logo.png";
 
+            byte[] inputBytes = Encoding.ASCII.GetBytes(input);
+
             using (MD5 md5 = MD5.Create())
             {
-                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
                 byte[] hashBytes = md5.ComputeHash(inputBytes);
 
                 md5Output = Convert.ToHexString(hashBytes).ToLower();
@@ -35,7 +38,6 @@ namespace Flow.Launcher.Plugin.HashPlugin
 
             using (SHA1 sha1 = SHA1.Create())
             {
-                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
                 byte[] hashBytes = sha1.ComputeHash(inputBytes);
 
                 sha1Output = Convert.ToHexString(hashBytes).ToLower();
@@ -43,7 +45,6 @@ namespace Flow.Launcher.Plugin.HashPlugin
 
             using (SHA256 sha256 = SHA256.Create())
             {
-                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
                 byte[] hashBytes = sha256.ComputeHash(inputBytes);
 
                 sha256Output = Convert.ToHexString(hashBytes).ToLower();
